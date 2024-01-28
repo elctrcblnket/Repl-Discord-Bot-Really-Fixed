@@ -1,5 +1,5 @@
 di = {
-  "s": { "Name": "Henry",
+  "CJ": { "Name": "Henry",
           "Poke": "Rattata",
           "Lv":"50",
           "Ntr":"Hasty",
@@ -14,19 +14,27 @@ di = {
         ["10","11","12","13","14"]
        }
 }
-#p = input("Person?")
-
-print(di["s"]["Poke"])
-print("Level:", di["s"]["Lv"])
-print(di["s"]["Ntr"],"Nature")
-print("Ability:",di["s"]["Ab"])
-print("EVs: 252",di["s"]["Tra1"],"/","252",di["s"]["Tra2"])
-print("IVs:",di["s"]["IVs"][0],"HP /",di["s"]["IVs"][1],"Atk /",di["s"]["IVs"][2],"Def /",di["s"]["IVs"][3],"SpA /",di["s"]["IVs"][4],"SpD")
-print("-",di["s"]["Mv1"])
-print("-",di["s"]["Mv2"])
-print("-",di["s"]["Mv3"])
-print("-",di["s"]["Mv4"])
-
+while True:
+  p = input("Person?")
+  if p == "CJ":
+      while True:
+        poke = input("What pokemon do you need?")
+        if poke == di[p]["Poke"]:
+          print(di[p]["Poke"])
+          print("Level:", di[p]["Lv"])
+          print(di[p]["Ntr"],"Nature")
+          print("Ability:",di[p]["Ab"])
+          print("EVs: 252",di[p]["Tra1"],"/","252",di[p]["Tra2"])
+          print("IVs:",di[p]["IVs"][0],"HP /",di[p]["IVs"][1],"Atk /",di[p]["IVs"][2],"Def /",di[p]["IVs"][3],"SpA /",di[p]["IVs"][4],"SpD")
+          print("-",di[p]["Mv1"])
+          print("-",di[p]["Mv2"])
+          print("-",di[p]["Mv3"])
+          print("-",di[p]["Mv4"])
+          break
+        else:
+          print("try again")
+          continue
+    
 '''
 Example of what we're trying to get: 
 Rattata
