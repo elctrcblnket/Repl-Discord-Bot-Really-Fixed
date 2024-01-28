@@ -12,7 +12,7 @@ Nuzlocke Tracker
 
 ## Giving Back Helpful Data
     - Easier prompting for cheats: depending on the run, cheats are common to make for an easier experience. 
-    - You can give the bot the question to grab a specific item or TM/HM and it will spit out the code necessary.
+    - You can give the bot the question to grab a specific item or TM/HM and it will spit out the code necessary.Test 
 
 ## Run Tracker
   The ability to give out a short, listed summary of what tasks are next. 
