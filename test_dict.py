@@ -1,3 +1,5 @@
+from test_input import library
+
 di = {
   "CJ": { "Name": "Henry",
           "Poke": "Rattata",
@@ -36,28 +38,11 @@ while True:
           continue
     
 '''
-Example of what we're trying to get: 
-Rattata
-Level: 50
-Hasty Nature
-Ability: Run Away
-EVs: 252 HP / 252 SpD
-IVs: 10 HP / 11 Atk / 12 Def / 13 SpA / 14 SpD / 15 Spe
-- Acid Spray
-- Aromatherapy
-- Burning Jealousy
-- Behemoth Bash
-
-
-print(Dict['Dict1'][<key>])
-print(Dict['Dict2'][<key>])
 
 d.get(<key>[, <default>])
 
 d.clear()
 d.items() Returns a list of key-value pairs in a dictionary.
 d.pop(<key>[, <default>]) Removes a key from a dictionary, if it is present, and returns its value.
-
-
 
 '''
