@@ -1,0 +1,9 @@
+main bot functions
+ * track what pokemon we've caught in which route
+  -- track evolutions, move changes, deaths, nicknames and ev training
+  -- include soul link functions as default: if one pokemon dies, ensure the others are marked dead as well
+ * output pokemon info in unbound calculator format
+  -- choose any pokemon currently in database and output stats in format to import into unbound calc
+ * display major battle information in an embedded card
+ * display what route we're currently
+ * display weakness/strength info for each pokemon
