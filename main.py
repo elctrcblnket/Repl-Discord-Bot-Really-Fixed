@@ -18,10 +18,13 @@ async def on_ready():
 @client.event
 async def on_message(message):
   #why ends message function?
+  # "That’s why it’s important to compare the message.author to the client.user (your bot user), and ignore any of its own messages."
   if message.author == client.user:
     return
   #what is try?
+  # what is causing the 4x responses
   try:
+    # these ifs check special messages but... (line 38)
     if get_response(message.content) == "delete":
       #why is this needed?
       await message.delete()
@@ -34,6 +37,7 @@ async def on_message(message):
       keys = db.keys()
       for key in keys:
         print(db[key])
+    # ...print eveything else otherwise
     else:
       await message.channel.send(get_response(message.content))
   except ValueError:

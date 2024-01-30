@@ -24,3 +24,5 @@ print('out of loop')
 # HP ATKK DEF
 # HP ATK DEEF
 # HP ATK DE EF
+
+# https://realpython.com/how-to-make-a-discord-bot-python/#connecting-a-bot

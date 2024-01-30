@@ -1,5 +1,6 @@
 from replit import db
 from cheat_moves import moves
+from areas import area_checklist
 
 #helper - Updating new mon
 def update_database(new_mon, route):
@@ -13,6 +14,9 @@ def delete_mons(del_mon):
     return "removed"
   else:
     return "no valid pokemon"
+
+# function calls areas.py
+# def area_todo()
 
 def get_response(user_input):
   response: str = user_input.lower()
@@ -47,3 +51,7 @@ def get_response(user_input):
   if response.startswith("$del"):
     del_mon = response.split()[1]
     delete_mons(del_mon)
+
+  # calling area function
+  if response.startswith("$area"):
+    return area_checklist(response)
